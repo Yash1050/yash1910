@@ -1,0 +1,272 @@
+$ git remote rm origin
+$ git push -u origin master 
+
+
+
+
+cheat sheet 4 
+
+Hi@DESKTOP-PEFNV41 MINGW64 ~ $
+git init
+Initialized empty Git repository in C:/Users/Hi/.git/
+
+Hi@DESKTOP-PEFNV41 MINGW64 ~ (master) $
+git --version
+git version 2.32.0.windows.2
+
+Hi@DESKTOP-PEFNV41 MINGW64 ~ (master) $
+git init
+Reinitialized existing Git repository in C:/Users/Hi/.git/
+
+Hi@DESKTOP-PEFNV41 MINGW64 ~ (master) $ git status warning: could not open
+directory 'Application Data/': Permission denied warning: could not open directory
+'Cookies/': Permission denied warning: could not open directory 'Local Settings/':
+Permission denied warning: could not open directory 'My Documents/': Permission
+denied warning: could not open directory 'NetHood/': Permission denied warning:
+could not open directory 'PrintHood/': Permission denied warning: could not open
+directory 'Recent/': Permission denied warning: could not open directory 'SendTo/':
+Permission denied warning: could not open directory 'Start Menu/': Permission
+denied warning: could not open directory 'Templates/': Permission denied
+On branch master
+
+No commits yet
+
+Untracked files:
+ (use "git add <file>..." to include in what will be committed)
+ .AndroidStudio3.4/
+ .AndroidStudio3.5/
+ .AndroidStudio3.6/
+ .VirtualBox/
+ .android/
+ .appletviewer
+ .argouml/
+ .bash_history
+ .gradle/
+ .idlerc/
+ .packettracer
+ .vscode/
+ AndroidStudioProjects/
+ AppData/
+25
+ Cisco Packet Tracer 7.3.1/
+ Contacts/
+ Desktop/
+ Documents/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+ Music/
+ NPProt.bkp
+ NPProt.exe
+ NTUSER.DAT
+ NTUSER.DAT{cb56a6d7-0c49-11e6-a90e-c8aa52d4e633}.TM.blf NTUSER.DAT{cb56a6d7-
+0c49-11e6-a90ec8aa52d4e633}.TMContainer00000000000000000001.regtrans-ms NTUSER.DAT{cb56a6d7-
+0c49-11e6-a90ec8aa52d4e633}.TMContainer00000000000000000002.regtrans-ms
+ OneDrive/
+ Pictures/
+ PycharmProjects/
+ Saved Games/
+ Searches/ Videos/
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+ntuser.ini
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hi@DESKTOP-PEFNV41 MINGW64 ~ (master) $
+git config --global user.name 'Rutaj'
+
+Hi@DESKTOP-PEFNV41 MINGW64 ~ (master)
+$ git config --global user.email 'rutajdamodare@gmail.com'
+
+Hi@DESKTOP-PEFNV41 MINGW64 ~
+(master) $ git config --global --list user.name=Rutaj
+user.email=rutajdamodare@gmail.com
+Hi@DESKTOP-PEFNV41 MINGW64 ~
+(master) $
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj $
+git init
+Initialized empty Git repository in C:/rutaj/.git/
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git status
+On branch master
+
+No commits yet
+26
+
+Untracked files:
+ (use "git add <file>..." to include in what will be committed)
+Exp2.docx exp1.docx exp3.docx exp4 (2).docx
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git config --global --list user.name=Rutaj
+user.email=rutajdamodare@gmail.com
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+ (use "git add <file>..." to include in what will be committed)
+Exp2.docx exp1.docx exp3.docx exp4 (2).docx
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git add Exp2.docx
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+ (use "git rm --cached <file>..." to unstage) new file: Exp2.docx
+Untracked files:
+ (use "git add <file>..." to include in what will be committed) exp1.docx
+exp3.docx exp4 (2).docx
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master) $
+git commit -m 'First Commit'
+27
+[master (root-commit) 48f2fca] First Commit 1 file changed,
+0 insertions(+), 0 deletions(-) create mode 100644
+Exp2.docx
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git status
+On branch master Untracked
+files:
+ (use "git add <file>..." to include in what will be committed) exp1.docx
+exp3.docx exp4 (2).docx
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git add exp1.docx
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git status
+On branch master
+Changes to be committed:
+ (use "git restore --staged <file>..." to unstage) new file: exp1.docx
+Untracked files:
+ (use "git add <file>..." to include in what will be committed) exp3.docx
+exp4 (2).docx
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git commit -m 'commit 2 exp1 added'
+[master 409c6f4] commit 2 exp1 added
+1 file changed, 0 insertions(+), 0 deletions(-) create mode 100644
+exp1.docx
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git status
+On branch master Untracked
+files:
+ (use "git add <file>..." to include in what will be committed) exp3.docx
+exp4 (2).docx
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+28
+$
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+ (use "git rm --cached <file>..." to unstage) new
+file: Exp2.docx new file: exp1.docx new file:
+exp3.docx new file: exp4.docx
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master) $
+git commit -m 'First commit'
+[master (root-commit) 5c9fce8] First commit 4 files
+changed, 0 insertions(+), 0 deletions(-) create mode
+100644 Exp2.docx create mode 100644 exp1.docx create
+mode 100644 exp3.docx create mode 100644 exp4.docx
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git log
+commit 5c9fce8e156d846feaac0718fcd21f7e614e5fe0 (HEAD -> master) Author:
+Rutaj <rutajdamodare@gmail.com>
+Date: Mon Aug 30 19:28:05 2021 +0530
+
+ First commit
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master) $
+git log --oneline
+5c9fce8 (HEAD -> master) First commit
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git log --oneline Exp2.docx
+5c9fce8 (HEAD -> master) First commit
+
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git remote add origin https://github.com/Rutaj03/exp-2.git
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git remote show origin
+* remote origin 
+ Fetch URL: https://github.com/Rutaj03/exp-2.git
+ Push URL: https://github.com/Rutaj03/exp-2.git HEAD
+branch: main Remote branch:
+ main new (next fetch will store in remotes/origin)
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master) $
+git push -u origin master
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 2.01 MiB | 3.20 MiB/s, done. Total 11 (delta 2),
+reused 0 (delta 0), pack-reused 0 remote: Resolving deltas: 100% (2/2), done.
+remote: remote: Create a pull request for 'master' on GitHub by visiting:
+remote:
+ https://github.com/Rutaj03/exp-2/pull/new/master
+remot
+e:
+https://github.com/Rutaj03/exp-2.git
+* [new branch] master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git pull remote: Enumerating objects: 9, done. remote: Counting objects:
+100% (9/9), done. remote: Compressing objects: 100% (5/5), done. remote:
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0 Unpacking objects: 100%
+(9/9), 1.80 KiB | 4.00 KiB/s, done.
+From https://github.com/Rutaj03/exp-2
+* [new branch] main -> origin/main
+* [new branch] new-branch -> origin/new-branch * [new branch]
+demo -> origin/demo Already up to date.
+
+
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git fetch
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git merge origin/master
+Already up to date
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master)
+$ git status
+On branch master
+30
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+ (use "git add/rm <file>..." to update what will be committed)
+ (use "git restore <file>..." to discard changes in working directory)
+exp3.docx exp4.docx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master) $
+git log --oneline
+5c9fce8 (HEAD -> master, origin/master) Commit 1 Exp2.added
+8bdf62e First Commit
+Hi@DESKTOP-PEFNV41 MINGW64 /c/rutaj (master) $
